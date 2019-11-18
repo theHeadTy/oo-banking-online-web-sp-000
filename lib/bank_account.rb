@@ -8,7 +8,7 @@ class BankAccount
   end
 
   def deposit(amount)
-    @balance += Integer(amount)
+    @balance += Integer(amount) rescue false
   end
 
   def display_balance
