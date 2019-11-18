@@ -9,7 +9,7 @@ class Transfer
   end
 
   def valid?
-    (sender.valid? && receiver.valid? && amount.is_a? Integer && status == 'open') ? true : false
+    (sender.valid? && receiver.valid? && Integer(amount) && status == 'open') ? true : false
   end
 
   def execute_transaction
