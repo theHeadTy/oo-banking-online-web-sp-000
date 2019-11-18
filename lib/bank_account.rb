@@ -8,11 +8,11 @@ class BankAccount
   end
 
   def deposit(amount)
-    @balance += amount
+    @balance += Integer(amount)
   end
 
   def display_balance
-    puts "Your balance is $#{balance}"
+    puts "Your balance is $#{@balance}"
   end
 
   def valid?
